@@ -258,3 +258,22 @@ figure{
     height: inherit;
     flex-wrap: inherit;
 }
+ /* desktop first desde MQ mas grnade*/
+
+@media screen and(max-width: 1024px){
+
+
+}
+
+@media screen and(max-width: 768px){
+
+    
+}
+@media screen and(max-width: 480px){
+
+    
+}
+@media screen and(max-width: 320px){
+
+    
+}
