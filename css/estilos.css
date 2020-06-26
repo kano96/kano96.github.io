@@ -52,6 +52,7 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .hero-image{
@@ -74,6 +75,7 @@ h2 {
     padding: 20px;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .project-date,
 .project-course,
@@ -109,6 +111,7 @@ h2 {
     justify-content: space-between;
     height: 70px;
     align-items: center;
+    flex-wrap: wrap;
 }
 .header p{
     justify-self: left;
@@ -142,6 +145,7 @@ figure{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .footer img{
     vertical-align: middle;
@@ -200,6 +204,7 @@ figure{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .social{
@@ -250,7 +255,8 @@ figure{
 }
 
 .container{
-    width: 1000px;
+    max-width: 1000px;
+    flex: 1;
     margin: 0 auto;
     display: inherit;
     justify-content: inherit;
@@ -260,20 +266,34 @@ figure{
 }
  /* desktop first desde MQ mas grnade*/
 
-@media screen and(max-width: 1024px){
+@media screen and (max-width: 1024px){
 
 
 }
 
-@media screen and(max-width: 768px){
+@media screen and (max-width: 767px){
+    .header{
+        display: block;
+        height: auto;
+    }
+    .header ol{
+        display: block;
+    }
+    .header ol li{
+        height: 50px;
+    }
+    .header a{
+        justify-content: center;
+    }
+    .header .logo{
+        text-align: center;
+    }
+}
+@media screen and (max-width: 480px){
 
     
 }
-@media screen and(max-width: 480px){
-
-    
-}
-@media screen and(max-width: 320px){
+@media screen and (max-width: 320px){
 
     
 }
