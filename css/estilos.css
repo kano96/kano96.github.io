@@ -99,10 +99,14 @@ h2 {
 
 
 .project-details{
-    width: 500px;
+    width: 50%;
 }
 .project-imageContainer{
-    width: 500px;
+    width: 50%;
+}
+.project-imageContainer img{
+    max-width: 100%;
+    width: 100%;
 }
 .header{
     background-color: #1b2127;
@@ -159,8 +163,8 @@ figure{
     flex-wrap: wrap;
 }
 .event{
-    margin: 10px;
-    width: 480px;
+    margin: 1%;
+    width: 48%;
     flex-shrink: 0;
     border-radius: 10px;
     overflow: hidden;
@@ -175,7 +179,7 @@ figure{
 .event-details{
     margin: 20px 40px;
     margin-top: -40px;
-    background-color: white;
+    background-color: gainsboro;
     position: relative;
     padding: 20px;
     text-align: center;
@@ -288,10 +292,50 @@ figure{
     .header .logo{
         text-align: center;
     }
+    .project{
+        display: block;
+    }
+    .project-imageContainer{
+        width: auto;
+        text-align: center;
+    }
+    .project-details{
+        width: auto;
+        font-size: 16px;
+    }
+    .project-course, .project-date, .project-url{
+        margin: .3em 0;
+    }
+    .project-title{
+        font-size: 1.5em;
+        margin-bottom: .3em;
+    }
+    .project-url{
+        font-size: 1em;
+    }
+    .project-course{
+        font-size: .7em;
+    }
+    .project-date{
+        font-size: 1em;
+    }
+    .project-description{
+        font-size: .8em;
+    }
+    .event{
+        width: auto;
+        flex-shrink: initial;
+    }
+    .event img{
+        width: 100%;
+        height: 100%;
+    }
 }
 @media screen and (max-width: 480px){
-
-    
+    .project-details{
+        width: auto;
+        font-size: 12px;
+    }
 }
 @media screen and (max-width: 320px){
 
