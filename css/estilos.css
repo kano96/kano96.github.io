@@ -183,6 +183,7 @@ figure{
     position: relative;
     padding: 20px;
     text-align: center;
+    z-index: 4;
 }
 
 .event-description{
@@ -274,12 +275,11 @@ figure{
     .container{
         padding: 0 1em;
     }
-
-}
-
-@media screen and (max-width: 767px){
     .hero{
         height: auto;
+        position: relative;
+        overflow: hidden;
+        padding: 2em;
     }
     h1{
         font-size: 2em;
@@ -288,7 +288,15 @@ figure{
     .hero-image{
         position: absolute;
         z-index: 1;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 100%;
     }
+}
+
+@media screen and (max-width: 767px){
     .header{
         display: block;
         height: auto;
@@ -370,8 +378,32 @@ figure{
         text-align: center;
         border: 1px solid transparent;
     }
+    h1{
+        font-size: 1.5em;
+    }
+}
+.video-yt{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+}
+.flexiblevideo{
+    width: 100%;
+    height: 0;
+    padding-top: 56.25%;
+    background: #026fff;
+    position: relative;
 }
 @media screen and (max-width: 320px){
-
-    
+    h1{
+        font-size: 1.2em;
+    }
+    .hero{
+        padding: 2em 1em;
+    }
 }
