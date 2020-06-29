@@ -134,6 +134,7 @@
         const menu = document.querySelector('.menu');
         const burgerButton = document.querySelector('#burger-menu');
         ipad.addListener(validation)
+        validation(ipad);
         mediaQuery.addListener(validation)
         if (mediaQuery.matches){
             burgerButton.addEventListener('click',hideShow)
