@@ -462,21 +462,21 @@ figure{
         width: 100%;
         height: 100%;
     }
-}
-@media screen and (max-width: 529px){
-    .contact {
+    .icon-github, .icon-twitter, .icon-facebook, .icon-instagram, .icon-linkin{
+        font-size: 3em;
+    }
+    .social-link{
+        margin: 0 5px;
+    }
+    .contact{
         height: auto;
-        padding: 1.5em 0;
-        text-align: center;
-        display: block;
+        margin-bottom: .75em;
     }
-    .form-email button{
-        margin: 1em auto;
-    }
-    .form-email h3{
-        margin-top: 0;
+    .social{
+        padding-top: 1.5em;
     }
 }
+
 
 @media screen and (max-width: 480px){
     .project-details{
@@ -511,6 +511,9 @@ figure{
     .icon-github, .icon-twitter, .icon-facebook, .icon-instagram, .icon-linkin{
         font-size: 3em;
     }
+    .social{
+        justify-content: center;
+    }
 }
 .video-yt{
     position: absolute;
@@ -541,5 +544,8 @@ figure{
     }
     .icon-github, .icon-twitter, .icon-facebook, .icon-instagram, .icon-linkin{
         font-size: 2em;
+    }
+    .social{
+        justify-content: center;
     }
 }
